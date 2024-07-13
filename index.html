@@ -29,6 +29,8 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='./styles.css' media='all' />
+  <link rel='stylesheet' href='./form.css' />
 
   <!-- =======================================================
   * Template Name: HeroBiz
@@ -92,6 +94,109 @@
   </header>
 
   <main class="main">
+
+    <!-- Calc Section -->
+
+    <section id="calc">
+      <div class="row container">
+        <div class="col col-6">
+        </div>
+        <div class="calc col-8 col-lg-6">
+          <div>
+            <span>Какая сумма вам требуется?</span>
+            <span class="range-value">10 000 000</span>
+            <input type="range" min="500000" max="65000000" value="10000000" id="amount" step="1000">
+            <div class="range-values">
+              <span class="min-max">500 000</span>
+              <span class="min-max">65 000 000</span>
+            </div>
+          </div>
+          <div>
+            <span>На какой срок?</span>
+            <span class="range-value">2 месяца</span>
+            <input type="range" min="2" max="3" value="2" id="period" step="1">
+            <div class="range-values">
+              <span class="min-max">от 2 мес.</span>
+              <span class="min-max">до 3 мес.</span>
+            </div>
+          </div>
+          <div>
+            <span class="calc-label">С какой наценкой вы продаете товар?</span>
+            <input type="text" class="big-input" id="fee" value="30%">
+          </div>
+
+          <span class="calc-label">Как быстро продаётся партия товара? (месяцев)</span>
+          <div class="big-input" id="month">
+            <label class="month-item" for="month1">
+              1
+              <input id="month1" name="month" type="radio" value="1">
+            </label>
+            <label class="month-item" for="month2">
+              2
+              <input id="month2" name="month" type="radio" value="2">
+            </label>
+            <label class="month-item" for="month3">
+              3
+              <input id="month3" name="month" type="radio" value="3" checked="checked">
+            </label>
+            <label class="month-item" for="month4">
+              4
+              <input id="month4" name="month" type="radio" value="4">
+            </label>
+            <label class="month-item" for="month5">
+              5
+              <input id="month5" name="month" type="radio" value="5">
+            </label>
+            <label class="month-item" for="month6">
+              6
+              <input id="month6" name="month" type="radio" value="6">
+            </label>
+          </div>
+          <div class="result">
+            <h4>Ваша выгода от заемных средств</h4>
+            <div class="big-sale"><span id="turnover">20 644 838</span><span class="rub"> ₽</span></div>
+            <button class="btn" id="get_send_calc"><span>Получить заем</span></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container" id="request">
+        <div class="col-8">
+          <h2>Оставьте заявку на предварительное одобрение</h2>
+          <div class="form">
+            <form id="form" action="/teslajake88/send.php">
+              <input type="hidden" name="subject" class="form_title" value="Получить консультацию">
+              <p>Контактное лицо</p>
+              <input required="" type="text" class="input" name="fullname" id="name">
+              <p>Телефон</p>
+              <input required="" type="text" class="input" name="phone" id="phone">
+              <p style="position: relative;">Email<span class="ermail">Некорректный email адрес</span></p>
+              <input required="" type="text" class="input" name="email" id="email">
+              <p>Промокод</p>
+              <input required="" type="text" class="input" name="promo" id="promo">
+              <div class="sogl flex aic">
+                <label class="chek" for="check">
+                  <img decoding="async" src="https://simplefinance.ru/wp-content/themes/simplefinance/img/svg/chek.svg"
+                    alt="галочка" class="chek-gal">
+                  <input id="check" type="checkbox" name="check" style="display: none;">
+                </label>
+                <p><a href="https://simplefinance.ru/politika-konfidencialnosti/" target="_blank">Отправляя
+                    заявку, я соглашаюсь с условиями политики конфиденциальности</a> и даю согласие на
+                  обработку персональных данных</p>
+              </div>
+              <input type="submit" class="btn" value="ОТПРАВИТЬ" id="submit">
+              <div id="status"></div>
+            </form>
+          </div>
+          <div class="thenxbl">
+            <span>Спасибо за заявку!<br>Скоро мы свяжемся с вами.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calc Section -->
 
     <!-- Hero Section -->
     <!-- <section id="hero" class="hero section">
@@ -1266,6 +1371,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript" src="./jquery.min.js"></script>
+  <script type="text/javascript" src="./jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
 
 </body>
 
