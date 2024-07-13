@@ -16,12 +16,12 @@ $mail->Host       = "smtp.yandex.ru";
 $mail->SMTPDebug  = 0;
 $mail->SMTPAuth   = true;
 $mail->Port       = 587;
-$mail->Username   = "";
-$mail->Password   = "";
+$mail->Username   = "pochta@yandex.ru";
+$mail->Password   = "password";
 
 
 $mail->setFrom('');   
-$mail->addAddress('ruslan.volic@gmail.com');
+$mail->addAddress('info@alt1.finance');
 
 $mail->isHTML(true);
 $mail->Subject = 'Новая заявка';

@@ -1195,6 +1195,7 @@ section,
   transition: 0.5s;
   margin-top: 10px;
   background: var(--accent-color);
+  width: 80% !important;
 }
 
 .call-to-action .content .cta-btn:hover {
