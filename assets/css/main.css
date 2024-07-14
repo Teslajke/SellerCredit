@@ -3056,3 +3056,16 @@ section,
     font-size: 22px !important;
   }
 }
+
+@media (max-width: 767px) {
+  .testimonials .testimonial-item {
+    text-align: center;
+    max-width: 100px; /* Устанавливаем максимальную ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+  }
+  .testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 0 -50%; /* Измените margin для параграфа */
+    width: 200%; /* Добавьте этот стиль, чтобы текст занимал всю ширину родительского элемента */
+  }
+}
