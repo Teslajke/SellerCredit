@@ -3065,7 +3065,7 @@ section,
   }
   .testimonials .testimonial-item p {
     font-style: italic;
-    margin: 0 -50%; /* Измените margin для параграфа */
+    margin: 0 -90%; /* Измените margin для параграфа */
     width: 200%; /* Добавьте этот стиль, чтобы текст занимал всю ширину родительского элемента */
   }
 }
