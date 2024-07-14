@@ -3069,6 +3069,9 @@ section,
     margin: 0 -140%; /* Измените margin для параграфа */
     width: 400%; /* Добавьте этот стиль, чтобы текст занимал всю ширину родительского элемента */
   }
+  .testimonials .testimonial-item p span {
+    font-size: 14px !important;
+  }
 }
 
 @media (max-width: 767px) {
