@@ -119,61 +119,62 @@
         <div class="col col-6">
         </div>
         <div class="calc col-8 col-lg-6">
-          <div>
-            <span>Какая сумма вам требуется?</span>
-            <span class="range-value">10 000 000</span>
-            <input type="range" min="500000" max="65000000" value="10000000" id="amount" step="1000">
-            <div class="range-values">
-              <span class="min-max">500 000</span>
-              <span class="min-max">65 000 000</span>
+          <h3 style="text-align: center; font-weight:700;">Предварительный рассчет</h2>
+            <div>
+              <span>Какая сумма вам требуется?</span>
+              <span style="font-size: 20px; font-weight: 600;" class="range-value">10 000 000</span>
+              <input type="range" min="100000" max="10000000" value="10000000" id="amount" step="1000">
+              <div class="range-values">
+                <span class="min-max">100 000</span>
+                <span class="min-max">10 000 000</span>
+              </div>
             </div>
-          </div>
-          <div>
-            <span>На какой срок?</span>
-            <span class="range-value">2 месяца</span>
-            <input type="range" min="2" max="3" value="2" id="period" step="1">
-            <div class="range-values">
-              <span class="min-max">от 2 мес.</span>
-              <span class="min-max">до 3 мес.</span>
+            <div>
+              <span>На какой срок?</span>
+              <span class="range-value">2 месяца</span>
+              <input type="range" min="2" max="6" value="2" id="period" step="1">
+              <div class="range-values">
+                <span class="min-max">от 2 мес.</span>
+                <span class="min-max">до 6 мес.</span>
+              </div>
             </div>
-          </div>
-          <div>
-            <span class="calc-label">С какой наценкой вы продаете товар?</span>
-            <input type="text" class="big-input" id="fee" value="30%">
-          </div>
+            <div>
+              <span class="calc-label">С какой наценкой вы продаете товар?</span>
+              <input type="text" class="big-input" id="fee" value="30%">
+            </div>
 
-          <span class="calc-label">Как быстро продаётся партия товара? (месяцев)</span>
-          <div class="big-input" id="month">
-            <label class="month-item" for="month1">
-              1
-              <input id="month1" name="month" type="radio" value="1">
-            </label>
-            <label class="month-item" for="month2">
-              2
-              <input id="month2" name="month" type="radio" value="2">
-            </label>
-            <label class="month-item" for="month3">
-              3
-              <input id="month3" name="month" type="radio" value="3" checked="checked">
-            </label>
-            <label class="month-item" for="month4">
-              4
-              <input id="month4" name="month" type="radio" value="4">
-            </label>
-            <label class="month-item" for="month5">
-              5
-              <input id="month5" name="month" type="radio" value="5">
-            </label>
-            <label class="month-item" for="month6">
-              6
-              <input id="month6" name="month" type="radio" value="6">
-            </label>
-          </div>
-          <div class="result">
-            <h4>Ваша выгода от заемных средств</h4>
-            <div class="big-sale"><span id="turnover">20 644 838</span><span class="rub"> ₽</span></div>
-            <button class="btn" id="get_send_calc"><span>Получить заем</span></button>
-          </div>
+            <span class="calc-label">Как быстро продаётся партия товара? (месяцев)</span>
+            <div class="big-input" id="month">
+              <label class="month-item" for="month1">
+                1
+                <input id="month1" name="month" type="radio" value="1">
+              </label>
+              <label class="month-item" for="month2">
+                2
+                <input id="month2" name="month" type="radio" value="2">
+              </label>
+              <label class="month-item" for="month3">
+                3
+                <input id="month3" name="month" type="radio" value="3" checked="checked">
+              </label>
+              <label class="month-item" for="month4">
+                4
+                <input id="month4" name="month" type="radio" value="4">
+              </label>
+              <label class="month-item" for="month5">
+                5
+                <input id="month5" name="month" type="radio" value="5">
+              </label>
+              <label class="month-item" for="month6">
+                6
+                <input id="month6" name="month" type="radio" value="6">
+              </label>
+            </div>
+            <div class="result">
+              <h4>Ваша выгода от заемных средств</h4>
+              <div class="big-sale"><span id="turnover">20 644 838</span><span class="rub"> ₽</span></div>
+              <button class="btn" id="get_send_calc"><span>Получить заем</span></button>
+            </div>
         </div>
       </div>
 
@@ -249,7 +250,7 @@
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-clock-history"></i>
+                  <i style="font-size: 35px;" class="bi bi-clock-history"></i>
                 </div>
                 <a class="stretched-link">
                   <h3>Быстрое одобрение</h3>
@@ -266,7 +267,7 @@
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="fa fa-handshake-o"></i>
+                  <i style="font-size: 35px;" class="fa fa-handshake-o"></i>
                 </div>
                 <a class="stretched-link">
                   <h3>Без залога</h3>
@@ -283,7 +284,7 @@
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-search"></i>
+                  <i style="font-size: 35px;" class="bi bi-search"></i>
                 </div>
                 <a class="stretched-link">
                   <h3>Без скрытых комиссий</h3>
@@ -300,7 +301,7 @@
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-camera-video-off"></i>
+                  <i style="font-size: 35px;" class="bi bi-camera-video-off"></i>
                 </div>
                 <a class="stretched-link">
                   <h3>Мы не МФО / МКК</h3>
@@ -318,7 +319,7 @@
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-piggy-bank-fill"></i>
+                  <i style="font-size: 35px;" class="bi bi-piggy-bank-fill"></i>
                 </div>
                 <a class="stretched-link">
                   <h3>Ставка переплаты от 3.46%</h3>
@@ -336,7 +337,7 @@
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-calendar-check"></i>
+                  <i style="font-size: 35px;" class="bi bi-calendar-check"></i>
                 </div>
                 <a class="stretched-link">
                   <h3>Досрочное погашение без комиссии</h3>
@@ -1010,6 +1011,16 @@
             <div class="info">
               <h3>Контакты</h3>
               <p>Свяжитесь с нами удобным для Вас способом</p>
+              <div class="info-item d-flex">
+                <i class="bi bi-file-check-fill flex-shrink-0"></i>
+                <div>
+                  <h4>АО «Альт1 Факторинг»
+                  </h4>
+                  <p>ИНН: 9726077345
+
+                  </p>
+                </div>
+              </div>
 
               <div class="info-item d-flex">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
@@ -1035,6 +1046,17 @@
                   <a href="tel:+88003339880">8 800 333-98-80</a>
                 </div>
               </div>
+              <div class="info-item d-flex">
+                <i href="" class="bi bi-telegram flex-shrink-0"></i>
+                <div>
+                  <p><a href="">
+                      <h4>Телеграм</h4>
+                    </a></p>
+
+
+                  <!-- <a href="tel:+88003339880">8 800 333-98-80</a> -->
+                </div>
+              </div>
 
             </div>
 
@@ -1051,8 +1073,8 @@
                     <input required="" type="text" class="input" name="phone" id="phone">
                     <p style="position: relative;">Email<span class="ermail">Некорректный email адрес</span></p>
                     <input required="" type="text" class="input" name="email" id="email">
-                    <!-- <p>Промокод</p>
-                    <input required="" type="text" class="input" name="promo" id="promo"> -->
+                    <p>ИНН Компании</p>
+                    <input required="" type="text" class="input" name="promo" id="promo">
                     <div class="sogl flex aic">
                       <label class="chek" for="check">
                         <img decoding="async"
@@ -1160,7 +1182,7 @@
 
 
         <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-          <a href=""><i class="bi bi-telegram"></i></a>
+          <!-- <a href=""><i class="bi bi-telegram"></i></a> -->
 
 
 
