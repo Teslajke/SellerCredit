@@ -9,26 +9,26 @@ require './src/Exception.php';
 use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer();
 
-$mail->IsSMTP();
 $mail->CharSet = 'UTF-8';
 
+$mail->IsSMTP(); // это включает SMTP. Вы не закомментировали, поэтому оно не работало
 $mail->Host       = "smtp.yandex.ru";
 $mail->SMTPDebug  = 0;
 $mail->SMTPAuth   = true;
-$mail->Port       = 587;
-$mail->Username   = "pochta@yandex.ru";
-$mail->Password   = "password";
+$mail->SMTPSecure = "ssl";
+$mail->Port       = 465;
+$mail->Username   = "roshchin@alt1.finance";
+$mail->Password   = "yogrznsmnhjpunyv";
 
 
-$mail->setFrom('');   
-$mail->addAddress('info@alt1.finance');
+$mail->setFrom("roshchin@alt1.finance");   
+$mail->addAddress('roshchin@alt1.finance');
 
 $mail->isHTML(true);
 $mail->Subject = 'Новая заявка';
 $mail->Body    = print_r($_POST, true);
 
-$mail->send();
-
+//$mail->send();
 if(!$mail->send()){
     echo "Mailer Error: " . $mail->ErrorInfo;
 }else{

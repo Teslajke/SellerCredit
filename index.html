@@ -50,7 +50,8 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <div class="img">
-          <img src="assets/img/logo-main.png" class="img-fluid" alt="">
+          <img style="width: 200px; max-height: 100px !important;" src="assets/img/logo-main.png" class="img-fluid"
+            alt="">
         </div>
         <!-- <span>.</span> -->
       </a>
@@ -66,10 +67,10 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a style="padding:0 10%;" href="tel:+88003339880">8 800 333-98-80</a>
+      <a style="padding:0 10%; font-size:30px;" href="tel:+88003339880">8 800 333-98-80</a>
 
 
-      <a class="btn-getstarted" href="index.html#about"><i class="fa fa-telegram"></i></a>
+
 
     </div>
   </header>
@@ -91,8 +92,11 @@
 
 
 
-            <a style="width: 5; text-align:center;" class="cta-btn align-self-start" href="#calc">Рассчитать</a>
-            <a style="width: 5; text-align:center;" class="cta-btn align-self-start" href="#request">Оставить заяку</a>
+            <div style="margin-left:0%;" class="justify-content-center">
+              <a class="cta-btn" href="#calc">Рассчитать</a>
+              <a class="cta-btn" href="#request">Оставить заявку</a>
+              <a class="cta-btn" href="#request">Связаться в Telegram</a>
+            </div>
           </div>
 
           <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
@@ -174,7 +178,7 @@
       </div>
 
 
-      <div class="container" id="request">
+      <!-- <div class="container" id="request">
         <div class="col-8">
           <h2>Оставьте заявку на предварительное одобрение</h2>
           <div class="form">
@@ -186,8 +190,6 @@
               <input required="" type="text" class="input" name="phone" id="phone">
               <p style="position: relative;">Email<span class="ermail">Некорректный email адрес</span></p>
               <input required="" type="text" class="input" name="email" id="email">
-              <p>Промокод</p>
-              <input required="" type="text" class="input" name="promo" id="promo">
               <div class="sogl flex aic">
                 <label class="chek" for="check">
                   <img decoding="async" src="https://simplefinance.ru/wp-content/themes/simplefinance/img/svg/chek.svg"
@@ -206,7 +208,7 @@
             <span>Спасибо за заявку!<br>Скоро мы свяжемся с вами.</span>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- Calc Section -->
@@ -1030,33 +1032,38 @@
 
           </div>
           <div class="col-6">
-
-            <div class="form">
-              <form id="form" action="send.php">
-                <input type="hidden" name="subject" class="form_title" value="Получить консультацию">
-                <p>Контактное лицо</p>
-                <input required="" type="text" class="input" name="fullname" id="name">
-                <p>Телефон</p>
-                <input required="" type="text" class="input" name="phone" id="phone">
-                <p style="position: relative;">Email<span class="ermail">Некорректный email адрес</span></p>
-                <input required="" type="text" class="input" name="email" id="email">
-                <p>Промокод</p>
-                <input required="" type="text" class="input" name="promo" id="promo">
-                <div class="sogl flex aic">
-                  <label class="chek" for="check">
-                    <img decoding="async"
-                      src="https://simplefinance.ru/wp-content/themes/simplefinance/img/svg/chek.svg" alt="галочка"
-                      class="chek-gal">
-                    <input id="check" type="checkbox" name="check" style="display: none;">
-                  </label>
-                  <p><a href="https://simplefinance.ru/politika-konfidencialnosti/" target="_blank">Отправляя
-                      заявку, я соглашаюсь с условиями политики конфиденциальности</a> и даю согласие на
-                    обработку персональных данных</p>
+            <div class="container" id="request">
+              <h3>Оставьте заявку на предварительное одобрение</h2>
+                <div class="form">
+                  <form id="form" action="send.php">
+                    <input type="hidden" name="subject" class="form_title" value="Получить консультацию">
+                    <p>Контактное лицо</p>
+                    <input required="" type="text" class="input" name="fullname" id="name">
+                    <p>Телефон</p>
+                    <input required="" type="text" class="input" name="phone" id="phone">
+                    <p style="position: relative;">Email<span class="ermail">Некорректный email адрес</span></p>
+                    <input required="" type="text" class="input" name="email" id="email">
+                    <!-- <p>Промокод</p>
+                    <input required="" type="text" class="input" name="promo" id="promo"> -->
+                    <div class="sogl flex aic">
+                      <label class="chek" for="check">
+                        <img decoding="async"
+                          src="https://simplefinance.ru/wp-content/themes/simplefinance/img/svg/chek.svg" alt="галочка"
+                          class="chek-gal">
+                        <input id="check" type="checkbox" name="check" style="display: none;">
+                      </label>
+                      <p><a href="https://simplefinance.ru/politika-konfidencialnosti/" target="_blank">Отправляя
+                          заявку, я соглашаюсь с условиями политики конфиденциальности</a> и даю согласие на
+                        обработку персональных данных</p>
+                    </div>
+                    <input type="submit" class="btn" value="ОТПРАВИТЬ" id="submit">
+                    <div id="status"></div>
+                  </form>
                 </div>
-                <input type="submit" class="btn" value="ОТПРАВИТЬ" id="submit">
-                <div id="status"></div>
-              </form>
+
             </div>
+
+
             <div class="thenxbl">
 
             </div>
@@ -1147,7 +1154,7 @@
         <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
           <a href=""><i class="bi bi-telegram"></i></a>
 
-          <a href=""><i class="bi bi-instagram"></i></a>
+
 
         </div>
 
