@@ -3061,7 +3061,7 @@ section,
   .testimonials .testimonial-item {
     text-align: center;
     max-width: 100px; /* Устанавливаем максимальную ширину контейнера */
-    margin: 0 35%; /* Центрируем контейнер по горизонтали */
+    margin: 0 15%; /* Центрируем контейнер по горизонтали */
   }
   .testimonials .testimonial-item p {
     text-align: center;
