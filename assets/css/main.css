@@ -3070,7 +3070,7 @@ section,
     width: 400%; /* Добавьте этот стиль, чтобы текст занимал всю ширину родительского элемента */
   }
   .testimonials .testimonial-item p span {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
 }
 
