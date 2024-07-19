@@ -1024,6 +1024,12 @@ section,
   margin: 60px 0 0 60px;
 }
 
+@media (max-width: 767px) {
+  .about .about-img {
+    padding-right: 6%;
+  }
+}
+
 .about .about-img:before {
   position: absolute;
   inset: -60px 0 0 -60px;
@@ -1052,6 +1058,12 @@ section,
   font-weight: 300;
   font-size: 32px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .about h3 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
