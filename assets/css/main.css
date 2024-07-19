@@ -3081,3 +3081,9 @@ section,
     width: 150%;
   }
 }
+
+@media (max-width: 767px) {
+  .zayavka {
+    max-width: fit-content;
+  }
+}
