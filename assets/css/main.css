@@ -3084,6 +3084,6 @@ section,
 
 @media (max-width: 767px) {
   .zayavka {
-    max-width: fit-content;
+    max-width: 20%;
   }
 }
