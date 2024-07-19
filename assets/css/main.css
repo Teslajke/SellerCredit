@@ -3076,14 +3076,14 @@ section,
   }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   #contact {
     width: 150%;
   }
-}
+} */
 
-@media (max-width: 667px) {
+/* @media (max-width: 667px) {
   .zayavka {
     max-width: 20%;
   }
-}
+} */
