@@ -240,7 +240,7 @@ input[type="range"]:focus::-ms-fill-upper {
   -webkit-box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.1);
   box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 17px;
-  padding: 20px;
+  padding: 60px 80px;
   margin: 10px 20px;
 }
 
@@ -292,8 +292,6 @@ input[type="range"]:focus::-ms-fill-upper {
 .col-8 {
   position: relative;
   width: 60%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .col-8 {
@@ -320,4 +318,13 @@ input[type="range"]:focus::-ms-fill-upper {
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-width: 100%;
+}
+
+.calc .fields {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.calc h3 {
+  font-size: 24px;
 }
