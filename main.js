@@ -39,31 +39,26 @@ jQuery(function ($) {
       )
   })
   $("#period").on("input", function () {
-    let value = $(this).val();
+    let value = $(this).val()
     if (value > 3 && value < 6) {
-      value = 6;
+      value = 6
     }
-    $(this).val(value);
-    
+    $(this).val(value)
+
     $(this)
       .prev(".range-value")
       .text(
-        value +
-          " " +
-          num2str(parseInt(value), ["месяц", "месяца", "месяцев"])
+        value + " " + num2str(parseInt(value), ["месяц", "месяца", "месяцев"])
       )
   })
 
   $("#fee").on("input", function () {
     $(this)
       .prev(".range-value")
-      .text(
-        $(this).val() + "%"
-      )
+      .text($(this).val() + "%")
   })
 
   $("#days").on("input", function () {
-    
     $(this)
       .prev(".range-value")
       .text(
@@ -73,22 +68,33 @@ jQuery(function ($) {
       )
   })
 
+  function pretiffyNumber(num) {
+    return num.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, "$1 ")
+  }
+
   const overBase = [3463, 4200, 10264],
-    step = 100_000;
+    step = 100_000
 
   function calc() {
-    const days = $calc.find('#days').val(),
+    const days = $calc.find("#days").val(),
       fee = parseInt($calc.find("#fee").val()),
       amount = $calc.find("#amount").val(),
       period = $calc.find("#period").val(),
-      over = Math.ceil(amount / step * overBase[Math.ceil(period / 3)]);
-    
-    $calc.find("#over").text(over);
-    $calc.find("#turnover").text(
-      Math.ceil((amount * (1 + fee / 100) * 0.6 - amount) * (period * 30/days) - over)
-    )
+      over = Math.ceil((amount / step) * overBase[Math.floor(period / 3)])
+
+    $calc.find("#over").text(pretiffyNumber(over))
+    $calc
+      .find("#turnover")
+      .text(
+        pretiffyNumber(
+          Math.ceil(
+            (amount * (1 + fee / 100) * 0.6 - amount) * ((period * 30) / days) -
+              over
+          )
+        )
+      )
   }
-  calc();
+  calc()
   $calc.on("input", "input", calc)
 
   $form.on("submit", function (e) {
